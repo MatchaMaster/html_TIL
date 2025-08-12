@@ -82,3 +82,6 @@
 * 같은 페이지의다른 위치로 이동 시
 *`<a href="#위치아이디명">클릭요소</a>
 *`<a href="./login.html#search">클릭요소</a>
+## git버전관리
+### gitHub 폴더 복제 방법
+* `git clone 주소붙여넣기` 
