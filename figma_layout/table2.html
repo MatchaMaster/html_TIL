@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>선불요금제 | kt</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <style>
+        #pay {
+            width: 1100px;
+        }
+        #pay thead{
+            background-color: #fafafa;
+            border-top: 2px solid #555;
+            border-bottom: 2px solid #555;}
+            
+        #pay thead tr{}
+        #pay thead tr:nth-child(1) th{
+            padding-top: 30px; 
+            padding-bottom: 30px;} 
+        #pay thead tr:nth-child(2) th{
+            padding-bottom: 20px;
+            padding-top: 20px;}
+        #pay thead tr:nth-child(2){
+            border-top: 1px dotted #AAAAAA;
+            font-size: 1.125rem;
+            font-weight: 700;
+            line-height: 150%;
+            /* dashed = 일직선 점 */
+        }
+        #pay thead tr th{            
+            font-weight: 800;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+        #pay thead tr th img{}
+        #pay thead tr th h2{
+            margin-bottom: 12px;
+            font-weight: 800;
+        }
+        #pay thead tr th span{ font-size:0.875rem; color: #777;}
+        #pay tbody{
+            font-size: 16px; 
+        }
+        #pay tbody tr{
+        }
+        #pay tbody tr th{ border-bottom: 1px solid #DDDD;
+            font-weight: 700;}
+        #pay tbody tr td{
+            padding-bottom: 20px;
+            padding-top: 20px;
+            border-bottom: 1px solid #DDDD;
+            text-align: center;
+            font-weight: 700;
+        }
+        #pay tbody tr td em{ font-weight: 700; color: #EE239B;}
+        
+    </style>
+</head>
+<body>
+    <table id="pay">
+        <thead>
+            <tr class="early">
+                <th rowspan="2"><img src="./images/phone_img.png" alt=""></th>
+                <th colspan="4"><h2>선불요금제(국제전화)</h2><br><span>합리적인 선불요금제에 국제전화 혜택을 더한 알뜰한 요금제!</span></th>
+            </tr>
+            <tr>
+                <th>기본요금<br><span>(부가세 포함금액)</span></th>
+                <th>음성</th>
+                <th>문자</th>
+                <th>데이터</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>국제선불 300M</th>
+                <td><em>40,700</em>원</td>
+                <td>집/이동전화 무제한(국제전화 매일20분)</td>
+                <td>기본제공</td>
+                <td>300MB+3Mbps</td>
+            </tr>
+            <tr>
+                <th>국제선불 300M</th>
+                <td><em>40,700</em>원</td>
+                <td>집/이동전화 무제한(국제전화 매일20분)</td>
+                <td>기본제공</td>
+                <td>300MB+3Mbps</td>
+            </tr><tr>
+                <th>국제선불 300M</th>
+                <td><em>40,700</em>원</tdass=>
+                <td>집/이동전화 무제한(국제전화 매일20분)</td>
+                <td>기본제공</td>
+                <td>300MB+3Mbps</td>
+            </tr>
+        </tbody>
+    
+    </table>
+    <!-- 연습 -->
+    <hr>
+    <h1>행/열 합치기</h1>
+    <table id="test" style="border: 1px solid #000;">
+        <tr>
+        <!-- <td colspan="2" style="border: 1px solid #000;">1</td> -->
+            <!--<td>2</td  -->
+                <td>1</td>
+                <td rowspan="2" style="border: 1px solid #000";>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+</body>
+</html>
