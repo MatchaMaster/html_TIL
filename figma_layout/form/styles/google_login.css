@@ -1,0 +1,28 @@
+/* 외부스타일시트(HTML 공유 가능) */
+#wrap {}/* 4 */
+#wrap h1 {
+    font-weight: 900 ;
+    font-size: 2rem;
+}/* 4 */
+#wrap h1+p{}/* 4 */
+#wrap #login_frm{}/* 4 */
+
+/* 아이디,비번 */ /* 7 */
+#wrap #login_frm .id_pw_gruop {}
+#wrap #login_frm .id_pw_gruop dl {}
+#wrap #login_frm .id_pw_gruop dl dt { font-weight: 700;
+font-size: 1.25em;}
+#wrap #login_frm .id_pw_gruop dl dd {}
+#wrap #login_frm .id_pw_gruop dl dd.id_pw {}
+#wrap #login_frm .id_pw_gruop dl dd #user_email_id {}
+#wrap #login_frm .id_pw_gruop dl dd #user_pw {}
+
+/* 버튼,가입 */ /* 8 */
+#wrap #login_frm .btn_search_gruop {}
+#wrap #login_frm .btn_search_gruop h2 {}
+#wrap #login_frm .btn_search_gruop p {}
+#wrap #login_frm .btn_search_gruop p .btn {}/* a와 버튼 공통 */
+#wrap #login_frm .btn_search_gruop p #login_btn  {}/* 로그인 */
+#wrap #login_frm .btn_search_gruop p #sign_google  {}/* 구글 */
+#wrap #login_frm .btn_search_gruop .account {}
+#wrap #login_frm .btn_search_gruop .account .sign_up {}

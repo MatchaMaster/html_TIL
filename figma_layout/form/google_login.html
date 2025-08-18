@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Login | Google</title>
+    <!-- 웹글꼴 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Reset -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/google_login.css">
+    <style>
+        /* 내부 스타일시트 (HTML간 공유 불가하므로 외부연결을 권장한다.) */
+        body {background-color: #222;}
+#wrap {
+    background-color: #fff;
+    width: 440px;
+    height: 100vh;
+    padding: 179px 15px 0;
+    /* w값 성정된 바깥쪽 레이아웃 요소 가운데배치 */
+    margin:0 auto;
+}/* 4 */
+#wrap h1 {
+    font-weight: 900 ;
+    font-size: 2rem;
+    margin:0 0 30px;
+}/* 4 */
+#wrap h1+p{
+    margin:0 0 30px;
+}/* 4 */
+#wrap #login_frm{}/* 4 */
+
+/* 아이디,비번 */ /* 7 */
+#wrap #login_frm .id_pw_group {margin: 0 0 40px;}
+#wrap #login_frm .id_pw_group dl {}
+#wrap #login_frm .id_pw_group dl dt {
+    font-weight: 700;
+    font-size: 1.25em;
+    margin:0 0 20px;
+}
+#wrap #login_frm .id_pw_group dl dd {}
+#wrap #login_frm .id_pw_group dl dd:nth-child(2) {
+    margin: 0 0 40px;
+}
+#wrap #login_frm .id_pw_group dl dd .id_pw { 
+    font-size: 0.875em;
+    border: 1px solid #aaa;
+    padding: 15px;
+    display: block; width: 100%;
+    border-radius: 10px;
+}
+    /* 입력데이터 글자 디자인 정보 */
+
+#wrap #login_frm .id_pw_group dl dd.id_pw::placeholder {
+    color: #aaa;
+}/* 공통안내문 (placeholder) */
+#wrap #login_frm .id_pw_group dl dd #user_email_id {}
+#wrap #login_frm .id_pw_group dl dd #user_pw {}
+#wrap #login_frm .id_pw_group .error {
+    color: #F00; 
+    font-size: 0.875 em; 
+    font-weight: 500;
+    margin: 20px 0 0;
+    /* 초반숨기기 */
+    display: none;
+}
+
+/* 버튼,가입 */ /* 8 */
+#wrap #login_frm .btn_search_group p {}
+#wrap #login_frm .btn_search_group h2 {
+    font-weight: 700;
+    font-size: 1.25em;
+    margin:0 0 20px;
+}
+#wrap #login_frm .btn_search_group h2+p {
+    margin: 0 0 20px;
+}
+/* #wrap #login_frm .btn_search_groupp:nth-child(4) {margin: 0 0 30px;} */
+#wrap #login_frm .btn_search_group p .btn { 
+    display:block; width: 100%;
+    padding: 15px 0; /* 상하 (15) 좌우 (0) */
+    border-radius: 10px;
+    font-weight: 700;}/* a와 버튼 공통 */
+#wrap #login_frm .btn_search_group p #login_btn  {
+    margin:0 0 20px;
+    background-color: #000; color: #fff;
+}/* 로그인 */
+#wrap #login_frm .btn_search_group p #sign_google  {
+    border: 1px solid #aaa;
+    text-align: center;
+    margin: 0 0 20px;
+}/* 구글 */
+#wrap #login_frm .btn_search_group .account {
+    text-align: center;
+    font-size: 0.875em;
+}
+#wrap #login_frm .btn_search_group .account .sign_up {
+    font-weight: 700;
+}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>Welcome back</h1>
+        <p>Welcome back! Please enter your details.</p>
+        <!-- form==block | 선택,입력 양식을 묶는 그룹 -->
+        <form action="#" method="post" id="login_frm">
+            <fieldset class="id_pw_group"><!-- 블록 -->
+                <legend>입력양식</legend><!-- 인라인 -->
+                <dl>
+                    <dt>Email</dt>
+                    <dd ><input class="id_pw" type="text" name="user_email_id" id="user_email_id"  placeholder="Enter your email or id"></dd>
+                    <dt>Password</dt>
+                    <dd ><input class="id_pw" type="password" name="user_pw" id="user_pw" class="id_pw" placeholder="Enter your password"></dd>
+                </dl>
+                <p class="error">
+                    Please enter your ID
+                </p>
+            </fieldset>
+            <fieldset class="btn_search_group">
+                <legend>버튼&찾기</legend>
+                <h2>Forgot password</h2>
+                <p><button type="submit" id="login_btn" class="btn">Login</button></p>
+                <p><a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1" target="_blank" class="btn" id="sign_google">Sign in with Google</a></p>
+                <p class="account">Don’t have on account? <a href="#" class="sign_up">Sign up for free</a></p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
