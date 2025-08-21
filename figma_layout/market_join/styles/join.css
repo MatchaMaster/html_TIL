@@ -33,13 +33,15 @@ body {background-color: #f2f2f2;}
     overflow: hidden;
 }
 #wrap #join_frm .user_info dt{
-    background-color: bisque;
+    
     width: 120px;
     float: left; clear: both;
     /* display: inline-block; */
 }
 #wrap #join_frm .user_info dt em { font-weight :600; color: red;}
+
 #wrap #join_frm .user_info dd {
+    
     margin: 0 0 11px;
     float: left;
     
@@ -52,7 +54,11 @@ body {background-color: #f2f2f2;}
     width: 120px;
     float: right;
 }
+/* 가입양식-------------------------버튼 hover 공통 */
+#wrap #join_frm .btn_design:hover {background: #df15ff !important;}
 /* 가입양식-------------------------1.아이디 */
+#wrap #join_frm .user_info dd .input_de:focus {border: 2px solid #9E00B7;}
+
 #wrap #join_frm .user_info dd .input_de {
     border: 1px solid #aaa;
     width: 100%;
@@ -65,7 +71,9 @@ body {background-color: #f2f2f2;}
 /* 아이디 */
 #wrap #join_frm .user_info dd #user_id {
 }
+#wrap #join_frm .user_info dd #id_overlap_btn:hover {background: #df15ff;}
 #wrap #join_frm .user_info dd #id_overlap_btn {
+
     background-color: #9E00B7;
     color: #fff;
     border-radius: 5px;
@@ -80,6 +88,7 @@ body {background-color: #f2f2f2;}
 #wrap #join_frm .user_info dd #user_name {}
 /* 메일 */
 #wrap #join_frm .user_info dd #user_mail {}
+#wrap #join_frm .user_info dd #mail_overlap_btn:hover {background: #df15ff;}
 #wrap #join_frm .user_info dd #mail_overlap_btn {
     border-radius: 5px;
     width: 120px; padding: 10px 0;
@@ -104,6 +113,7 @@ body {background-color: #f2f2f2;}
     width: 245px;
     float: right;
 }
+#wrap #join_frm .user_info dd #certified_btn:hover {background: #df15ff;} 
 #wrap #join_frm .user_info dd #certified_btn {
     border-radius: 5px;
     width: 120px; padding:10px ;
@@ -153,10 +163,12 @@ body {background-color: #f2f2f2;}
     font-size: 0.875rem;
 } /* 남,녀,선택안함 */
 /* 생년월일 */
+#wrap #join_frm .user_info dd .birthday:focus {border: 2px solid #9E00B7;}
 #wrap #join_frm .user_info dd .birthday { 
     text-align: center;
     width: 50px;
     font-size: 0.875rem;
+    border: 1px solid #fff;
 }
 #wrap #join_frm .user_info dd:nth-child(26) {
     text-align: center;
@@ -173,6 +185,7 @@ body {background-color: #f2f2f2;}
 }
 #wrap #join_frm .user_info dd  span {}
 /* 가입버튼 1 */
+#wrap #join_btn:hover {background: #df15ff;} 
 #wrap #join_btn {
     background-color: #9E00B7;
     padding: 10px 0;
