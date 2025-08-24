@@ -8,10 +8,33 @@
     <meta name="keywords" content="">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./musescore_login.html">
+    <link rel="stylesheet" href="./styles/musescore_login.css">
+    <!--프리텐다드(v1.3.9) 웹글꼴 연결주소-->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
 </head>
 <body>
-    
-    
+    <div id="wrap">
+        <div class="logo">
+            <h1><a href="#"><img src="./images/image 2.png" alt="Musescore"></a></h1>
+            <p>Don't have an account?<a href="#" class="active"><em>Sign Up</em></a></p>
+        </div>
+        <div class="sns_id">
+            <a href="#"><img src="./images/구글로고.png" alt="구글로 로그인하기">Continue with Google</a>
+            <a href="#"><img src="./images/fb-login.svg" alt="페이스북으로 로그인하기"></a>
+            <a href="#"><img src="./images/apple-login.svg" alt="애플로 로그인하기"></a>
+        </div>
+        <hr>
+        <div class="option">
+            <p>or</p>
+        </div>
+        <form action="#"  method="post" id="login_frm">
+        <label for="user_id">Email or username</label>
+        <input type="text" id="user_id" name="user_id">
+        <label for="user_pw">Password<em><a href="#" class="forgot_pw"> Forgot your password?</a></em></label>
+        <input type="password" id="user_pw" name="user_pw">
+        
+        <button type="submit" id="login_btn">Log in</button>
+        </form>
+    </div>
 </body>
 </html>

@@ -1,0 +1,103 @@
+#body { padding: 91px 44px;}
+#wrap { 
+    width: 320px;
+    margin: 91px auto;
+   
+    
+}
+#wrap .logo {text-align: center;   
+}
+#wrap .logo h1{}
+#wrap .logo a{}
+#wrap .logo a img{}
+#wrap .logo p{
+    padding: 10px 0;
+    color: #6e5f79;
+    margin-top: 7px;
+}
+#wrap .logo p em {
+    color: #6b5df2;
+}
+/* 계정연결 */
+#wrap .sns_id {
+    
+
+}
+#wrap .sns_id a {
+    border: 1px solid #d9d9d9;
+    padding: 8px 8px;
+    border-radius: 20px;
+}
+#wrap .sns_id a:nth-child(1):hover {background:#4431FD ;}
+#wrap .sns_id a:nth-child(1) {
+ font-size: 0.875rem;
+ border: 1px solid #6b5df2;
+ background-color: #6b5df2;
+ color: white;
+ padding: 9px 0;
+ padding-right: 36px;
+ border-radius: 20px;
+
+    
+}
+
+#wrap .sns_id a img:nth-child(1) {
+    transform: translateY(9px);
+    
+}
+#wrap .sns_id a img {}
+
+/* 중간구분 선 (or) */
+#wrap hr {
+    margin: 20px 20px;
+width: ;}
+#wrap .option  {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#wrap .option p {
+    background-color: #fff;
+    display: inline-block;
+    text-align: center; 
+    border: 1px solid white;
+    padding: 0px 10px;
+   transform: translateY(-32px);
+
+} 
+/* 로그인 폼 */
+#wrap #login_frm {
+    font-size: 0.875rem;
+    color: #180036;
+}
+#wrap #login_frm label {}
+#wrap #login_frm label a {
+     color: #6b5df2;
+}
+#wrap #login_frm label em {
+    display: inline-block;
+    font-size: 14px;
+    padding-left: 120px;
+   
+}
+#wrap #login_frm #user_id ,
+/* 비밀번호 폼 */
+
+#wrap #login_frm #user_pw {     
+    display: block;
+    border: 1px solid #BAB7BC;
+    margin: 7px 0 15px ;
+    width: 100%;
+    padding: 12px 16px;}
+#wrap #login_frm a {
+    display: inline-block;
+}
+/*  로그인버튼 */
+#wrap #login_btn {
+border: 1px solid  #d9d9d9;
+padding :15px 15px;
+width: 100%;
+border-radius: 20px;
+}
+#wrap #login_btn:hover {background: #6b5df2;
+}
