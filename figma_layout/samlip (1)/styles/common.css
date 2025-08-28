@@ -4,8 +4,11 @@
     /* 글자크기 */
     --text-title70:4.375rem;
     --text-title40:2.5rem;
+    --text-semititle31:1.938rem;
     --text-contents21:1.313rem;
+    --text-contents24:1.5rem;
     --text-menu18:1.125rem;
+    --text-contents16:1rem;
     --text-sub14:0.875rem;
     --text-sub12:0.75rem;
     --text-sub10:0.625rem;
@@ -17,6 +20,7 @@
     /* 굵기 */
     --weight-bold:700;
     --weight-semibold:600;
+    --weight-medieum:500;
     /* 색상(테두리색, 배경색, 글자색 등) */
     --color-white:#fff;
     --color-gray4:#444;
@@ -25,10 +29,15 @@
     --color-title-brown:#642c10;
     --color-title-indigo:#1d356d;
     --color-title-coral:#d43936;
-    --color-point:#36b4e5;
+    --color-point1:#fcfcfc;
+    --color-blue:#36b4e5;
+    --color-yellow:#f3c300;
+    
     /* 레이아웃 정보 */
     --width-desktop:1440px;
+    --width-desktop2:1140px;
     --margin-desktop-l-r-80:80px;
+
 }
 body,html {scroll-behavior: smooth;}
 /* header 포함 공통 */
