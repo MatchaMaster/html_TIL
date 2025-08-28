@@ -167,3 +167,85 @@ body,html {scroll-behavior: smooth;}
 #wrap header .right_menu li:nth-child(2) .lang_select a .cn {}
 /* 메인 */
 #wrap main {}
+/* 푸터 */
+#wrap footer { padding: 50px 80px; }
+
+/* .ft_top */
+#wrap footer .ft_top {
+  
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#wrap footer .ft_top .menu {
+    font-size: var(--text-sub14);
+    display: flex;
+    align-items: center;
+}
+#wrap footer .ft_top .menu a {
+    color: #676767;
+}
+
+#wrap footer .ft_top .menu a:first-child {
+    color: #DA2128;
+    font-size: var(--text-contents16);
+    font-weight: var(--weight-semibold);
+}
+
+#wrap footer .ft_top .menu a:nth-child(2) {
+    color: #138FBF;
+    font-size: var(--text-contents16);
+    font-weight: var(--weight-semibold);
+}
+
+#wrap footer .ft_top .menu a { margin-right: 40px; }
+
+/* .site_all */
+#wrap footer .site_all { background-color: var(--color-white);
+    display: flex;
+    gap: 20px; }
+    #wrap footer .site_all li {position: relative;}
+#wrap footer .site_all li p {
+    background-color: var(--color-white);
+    background-image: url(../images/arrowdown.png);
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    line-height: 40px;
+    padding-left: 10px;
+    border: 1px solid var(--color-grayd);
+    font-size: var(--text-sub12);
+}
+#wrap footer .site_all li:nth-child(1) p { width: 220px;}
+#wrap footer .site_all li:nth-child(2) p { width: 140px; }
+
+#wrap footer .site_all .family_list:hover  {} 
+#wrap footer .site_all .family_list  { 
+    display: none;
+    background-color: #fff;
+    overflow: auto;
+    border: 1px solid #d9d9d9;
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    font-size: var(--text-sub12);
+    bottom:40px; }
+#wrap footer .site_all li .family_list li {
+    padding: 10px;
+}
+#wrap footer .site_all li:nth-child(1):hover .family_list {display: block;}
+#wrap footer .site_all li .family_list li a {}
+
+#wrap footer .site_all li .sitemap_wrap { display: none; }
+#wrap footer .site_all li .sitemap_wrap .sitemap_contents {}
+#wrap footer .site_all li .sitemap_wrap .sitemap_contents h2 {}
+#wrap footer .site_all li .sitemap_wrap .sitemap_contents .close {}
+
+/* footer bottom */
+#wrap .ft_btm {}
+#wrap .ft_btm address { padding: 25px 0;
+    color: #808080;
+    font-size: var(--text-sub14);}
+#wrap .ft_btm p {color: #808080;
+    font-size: var(--text-sub14);}
