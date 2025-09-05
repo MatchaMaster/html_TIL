@@ -29,9 +29,19 @@
         #v_btn a {
             width:100px; margin:0 10px; 
             display:flex; align-items:flex-end;
+            transform-origin: right bottom;
         }
+        #v_btn a:hover {transform: rotate(10deg);}
         #v_btn a img {width:100%;}
-    </style>
+    /* body #visual #v_btn .c1 { transition: transform 0.5s;}
+    body #visual #v_btn .c1:hover { transform: rotate(20deg) translate(0px,-20px); }
+    body #visual #v_btn .c2 { transition: transform 0.5s;}
+    body #visual #v_btn .c2:hover { transform: rotate(20deg) translate(0px,-20px); }
+    body #visual #v_btn .c3 { transition: transform 0.5s;}
+    body #visual #v_btn .c3:hover:hover { transform: rotate(20deg) translate(0px,-20px); }
+    body #visual #v_btn .c2 {}
+    body #visual #v_btn .c3 {}
+    </style> */
     <script>
         window.onload=function(){
 
@@ -49,9 +59,9 @@
             <img src="images/nike1.png" alt="" id="nike_img">
         </div>
         <div id="v_btn">
-            <a href="#"><img src="images/nike1.png" alt=""></a>
-            <a href="#"><img src="images/nike2.png" alt=""></a>
-            <a href="#"><img src="images/nike3.png" alt=""></a>
+            <a href="#" class="c1"><img src="images/nike1.png" alt=""></a>
+            <a href="#" class="c2"><img src="images/nike2.png" alt=""></a>
+            <a href="#" class="c3"><img src="images/nike3.png" alt=""></a>
         </div>
     </div>
 </body>

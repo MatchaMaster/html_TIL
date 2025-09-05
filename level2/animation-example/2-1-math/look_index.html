@@ -23,31 +23,40 @@
         main #visual #deco {position:relative; width:1200px; margin:0 auto;}
         main #visual #deco .obj {position:absolute;}
 
-        main #visual #deco .obj1 {
+        main #visual #deco .obj1 { 
+            animation:  tilt 5s linear alternate-reverse  infinite both;
             top:170px; left:50%; margin-left:-342px;
         }
         main #visual #deco .obj2 {
+            animation: diamond 2s linear alternate  infinite both; ;
             left:0; top:150px;
         }
         main #visual #deco .obj3 {
+            animation:  tilt 2s linear alternate  infinite both;
             left:100px; top:250px;
         }
         main #visual #deco .obj4 {
+            animation: diamond 2s linear alternate  infinite both;
             left:150px; top:350px;
         }
         main #visual #deco .obj5 {
+            animation:  tilt 2s linear alternate-reverse  infinite both;
             right:0; top:150px;
         }
         main #visual #deco .obj6 {
+            animation: tilt 2s linear alternate  infinite both;
             right:200px; top:250px;
         }
         main #visual #deco .obj7 {
+            animation: diamond 2s linear alternate  infinite both;
             right:200px; top:240px;
         }
         main #visual #deco .obj8 {
+            animation:  tilt 2s linear alternate-reverse  infinite both;
             left:270px; top:440px;
         }
         main #visual #deco .obj9 {
+            animation: diamond 2s linear alternate  infinite both;
             right:0; top:440px;
         }
 
@@ -69,7 +78,14 @@
         main .category a.active {background:#26bad7; color:#fff;}
 
         /* 애니메이션 */
-
+@keyframes diamond {
+    0% {transform: scale(1);}
+    100% {transform: scale(1.2);}
+}
+@keyframes tilt {
+    0% {transform: rotate(30deg);}
+    100% {transform: rotate(-30deg);}
+}
     </style>
 </head>
 <body>

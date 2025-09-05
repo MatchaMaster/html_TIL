@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Transform 공부</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        main {background: pink; max-width: 1000px; margin: 100px auto;}
+        main .coffee {width: 200px; display: block; border: 1px solid palevioletred;} /* a태그는 크기적용 X */
+        main .coffee img {width: 100%;}
+        main .c1 {transition: transform 0.3s;} /* hover 위에다가 트랜지션 주기 */ /* 트랜지션:트랜스폼은 속도 */
+        main .c1:hover {
+            /* transform:속성(값) 속성(값) 속성(값); */
+            transform: scale(1.2); /* scale=비율조정 */
+        }
+        main .c2 {
+            transition: transform 0.3s;
+            transform-origin: right top;}/* 중심축을 오른쪽상단으로 변경 */
+        main .c2:hover {
+            transform: rotate(-36deg) scale(1.1); /* 회전시키기(시계방향) */
+            
+        }
+        main .c3 {
+            transition: transform 0.5s;
+            transform-origin: right top ;}
+        main .c3:hover {
+            transform: skewX(20deg) rotate(-60deg) scale(1.1);
+        }
+        main .c4 {transition: transform 1s;}
+        main p:hover .c4 {
+            transform: translate(500px,0px) rotate(360deg) scale(2); /* 마우스덜컹 거리면 부모태그 하나더 만들어서 영역 넓혀주기 */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <a href="#" class="coffee c1"><img src="./coffee_images/starbucks1.png" alt=""></a>
+        <a href="#" class="coffee c2"><img src="./coffee_images/starbucks1.png" alt=""></a>
+        <a href="#" class="coffee c3"><img src="./coffee_images/starbucks1.png" alt=""></a>
+        <p><a href="#" class="coffee c4"><img src="./coffee_images/starbucks1.png" alt=""></a></p>
+    </main>
+</body>
+</html>
